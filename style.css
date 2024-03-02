@@ -284,8 +284,8 @@ select > option {
     object-fit: cover;
   }
 
-  .video-fullscreen {
+  /* .video-fullscreen {
     height: 97.5vh;
     border-radius: 0;
-  }
+  } */
 }
