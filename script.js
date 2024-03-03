@@ -108,6 +108,7 @@ function changeSpeed () {
 }
 
 // Fullscreen ------------------------------- //
+let elem = document.documentElement;
 
 /* View in fullscreen */
 function openFullscreen(elem) {
