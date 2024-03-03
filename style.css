@@ -273,7 +273,10 @@ select > option {
 }
 
 /* Media Query: Large Smartphone (Horizontal) */
-@media screen and (width > 932px) and (height > 430px) {
+@media only screen 
+  and (width: 428px) 
+  and (height: 926px) 
+  and (-webkit-device-pixel-ratio: 3) {
   .player {
     max-height: 95vh;
     max-width: 95vw;
