@@ -280,7 +280,8 @@ select > option {
   and (orientation: landscape)
   and (width: 428px) 
   and (height: 926px) 
-  and (-webkit-device-pixel-ratio: 3) {
+  and (-webkit-device-pixel-ratio: 3) 
+  {
   .player {
     max-height: 95vh;
     max-width: 95vw;
@@ -288,11 +289,11 @@ select > option {
 
   video {
     height: 95vh;
-    object-fit: cover;
   }
-
+  
   .video-fullscreen {
     height: 97.5vh;
     border-radius: 0;
+    object-fit: cover;
   }
 }
