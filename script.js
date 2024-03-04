@@ -110,7 +110,7 @@ function changeSpeed () {
 // Fullscreen ------------------------------- //
 
 /* View in fullscreen */
-function openFullscreen() {
+function openFullscreen(player) {
     if (player.requestFullscreen) {
       player.requestFullscreen();
     } else if (player.webkitEnterFullscreen) { /* Safari */
