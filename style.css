@@ -216,9 +216,11 @@ select > option {
 }
 
 .video-fullscreen {
+  height: 97.5vh;
+  border-radius: 0;
   object-fit: cover;
   /* position: relative; */
-  top: 50%;
+  /* top: 50%; */
   /* transform:translateY(-50%); */
 }
 
