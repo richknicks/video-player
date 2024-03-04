@@ -217,8 +217,10 @@ select > option {
 
 
 .video-fullscreen {
-  height: 97.5vh;
-  border-radius: 0;
+  /* height: 97.5vh;
+  border-radius: 0; */
+  height: 100%;
+  height: -webkit-fill-available;
   object-fit: cover;
   /* position: relative; */
   /* top: 50%; */
@@ -280,6 +282,8 @@ select > option {
   .video-fullscreen {
     /* height: 97.5vh;
     border-radius: 0; */
+    height: 100%;
+    height: -webkit-fill-available;
     object-fit: cover;
   }
 }
@@ -303,6 +307,8 @@ select > option {
   .video-fullscreen {
     /* height: 97.5vh;
     border-radius: 0; */
+    height: 100%;
+    height: -webkit-fill-available;
     object-fit: cover;
   }
 }
