@@ -216,7 +216,8 @@ select > option {
 }
 
 .video-fullscreen {
-  position: relative;
+  object-fit: cover;
+  /* position: relative; */
   top: 50%;
   /* transform:translateY(-50%); */
 }
