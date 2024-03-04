@@ -110,13 +110,13 @@ function changeSpeed () {
 // Fullscreen ------------------------------- //
 
 /* View in fullscreen */
-function openFullscreen(e) {
-    if (e.requestFullscreen) {
-      e.requestFullscreen();
-    } else if (e.webkitRequestFullscreen) { /* Safari */
-      e.webkitRequestFullscreen();
-    } else if (e.msRequestFullscreen) { /* IE11 */
-      e.msRequestFullscreen();
+function openFullscreen() {
+    if (player.requestFullscreen) {
+      player.requestFullscreen();
+    } else if (player.webkitEnterFullscreen) { /* Safari */
+      player.webkitEnterFullscreen();
+    } else if (player.msRequestFullscreen) { /* IE11 */
+      player.msRequestFullscreen();
     }
     video.classList.add('video-fullscreen');
   }
