@@ -278,8 +278,8 @@ select > option {
     font-size: 12px;
   }
   .video-fullscreen {
-    height: 97.5vh;
-    border-radius: 0;
+    /* height: 97.5vh;
+    border-radius: 0; */
     object-fit: cover;
   }
 }
@@ -301,8 +301,8 @@ select > option {
   }
   
   .video-fullscreen {
-    height: 97.5vh;
-    border-radius: 0;
+    /* height: 97.5vh;
+    border-radius: 0; */
     object-fit: cover;
   }
 }
