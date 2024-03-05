@@ -289,8 +289,8 @@ select > option {
 /* Media Query: Large Smartphone (Horizontal) */
 @media only screen 
   and (orientation: landscape)
-  and (width: 428px) 
-  and (height: 926px) 
+  and (width < 428px) 
+  and (height < 926px) 
   and (-webkit-device-pixel-ratio: 3) 
   {
   .player {
