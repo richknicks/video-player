@@ -10,10 +10,7 @@ const currentTime = document.querySelector('.time-elapsed');
 const duration = document.querySelector('.time-duration');
 const speed = document.querySelector('.player-speed');
 const fullscreenBtn = document.querySelector('.fullscreen');
-const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
+
 
 // Play & Pause ----------------------------------- //
 function showPlayIcon () {
@@ -112,7 +109,10 @@ function changeSpeed () {
 }
 
 // Fullscreen ------------------------------- //
-
+function setViewportHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
 /* View in fullscreen */
 function openFullscreen(player) {
     if (player.requestFullscreen) {
@@ -155,5 +155,6 @@ volumeRange.addEventListener('click', changeVolume);
 volumeIcon.addEventListener('click', toggleMute);
 speed.addEventListener('change', changeSpeed);
 fullscreenBtn.addEventListener('click', toggleFullscreen);
-window.addEventListener('resize', appHeight)
-appHeight();
+window.addEventListener('resize', setViewportHeight);
+
+setViewportHeight();
